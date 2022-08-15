@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <title>Солнечные батареи GreenCorp</title>
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<header>
+  <header>
     <img class="header__logo" src='img/logo.svg'>
     <div class="header__controls">
       <a href="#contacts">Контакты</a>
@@ -27,45 +31,67 @@
   <section class="form">
     <div class="form__containter">
       <h1>Оставьте свои контакты</h1>
-      <p>Поможем подобрать модель. <br>Выбрать удобный вариант доставки и установки. <br>Гарантия возврата денег.</p>
+      <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег.</p>
+
       <form>
-        <div class="form__group">
-          <label for="name">Ваше имя</label>
-          <input type="text" placeholder="Введите имя" id="name">
-          <label for="email">Электронный адрес</label>
-          <input type="email" placeholder="***@yandex.ru" id="email">
-          <label for="phone">Номер телефона</label>
-          <input type="phone" placeholder="7 (999) 999-99-99" id="phone">
-          <label for="budget">Примерный бюджет</label>
-          <select id="budget">
-            <option>Выберите вариант</option>
-            <option value="10-30">10 000₽ – 30 000₽</option>
-            <option value="30-60">30 000₽ – 60 000</option>
-            <option value="160-100">60 000₽ – 100 000₽</option>
-            <option value="100+">100 000₽ </option>
-          </select>
-        </div>
-        <button type="submit" class="form__submit">Отправить заявку</button>
+        <form>
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input type="text" placeholder="Введите имя" id="name">
+          </div>
+          <div class="form__group">
+            <label for="email">Электронный адрес</label>
+            <input type="email" placeholder="***@yandex.ru" id="email">
+          </div>
+          <div class="form__group">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" placeholder="7 (999) 999-99-99" id="phone">
+          </div>
+          <div class="form__group">
+            <label for="budget">Примерный бюджет</label>
+            <select id="budget">
+              <option>
+                Выберите вариант
+              </option>
+              <option value="10 - 30">
+                10 000₽ - 30 000₽
+              </option>
+              <option value="30 - 60">
+                30 000₽ - 60 000₽
+              </option>
+              <option value="60 - 100">
+                60 000₽ - 100 000₽
+              </option>
+              <option value="100+">
+                100 000₽
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="form__submit">
+            Отправить заявку
+          </button>
+        </form>
       </form>
     </div>
   </section>
   <footer>
-    <div class="footer__container"> 
+    <div class="footer__container">
       <div class="footer__group">
         <h3>Позвонить нам:</h3>
         <div class="footer__links">
           <a href="tel:74959999999">+7 (495) 999-99-99</a>
         </div>
       </div>
-        <div class="footer__group">
+      <div class="footer__group">
         <h3>Решения для дома:</h3>
         <div class="footer__links">
           <a href="#">Солнечные панели GreenRobotic</a>
           <a href="#">Системы солнечных панелей GreenStation</a>
         </div>
-        </div>
-        <div class="footer__group">
+      </div>
+      <div class="footer__group">
         <h3>Компания</h3>
+
         <div class="footer__links">
           <a href="#">Контакты</a>
           <a href="#">Вакансии</a>
@@ -74,7 +100,7 @@
       </div>
     </div>
     <div class="footer__copyright">
-      <p>GreenCorp © 2021.</p>
+      GreenCorp © 2021
     </div>
   </footer>
 </body>
