@@ -66,6 +66,14 @@ button {
   background: url('img/back.png') no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
 }
 
 .about h1 {
@@ -264,6 +272,7 @@ footer h3 {
 
 .features__feedback {
   display: flex;
+  justify-content: space-between;
 }
 
 .features__feedback-left {
