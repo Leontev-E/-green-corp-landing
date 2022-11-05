@@ -16,7 +16,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   <header>
     <img class="header__logo" src='img/logo.svg'>
     <div class="header__controls">
-      <a href="#contacts">Контакты</a>
+      <a href="#form">Контакты</a>
       <button>Заказать</button>
     </div>
   </header>
@@ -26,7 +26,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     <div class="about__info animate__animated animate__fadeInLeft animate__slow">
       <h1>Солнечные панели GreenRobotic</h1>
       <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-      <button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
+      <button class="more-button" href="#features">Узнать подробнее <i class="fas fa-angle-right"></i></button>
   </div>
   <div class="about__images animate__animated animate__fadeInRight animate__slow">
       <img class="about__sun-image" src="img/sun.png">
@@ -68,9 +68,9 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
       <div class="features__feedback">
         <div class="features__feedback-left">
           <h2>
-             Нам доверяет
+            Нам доверяет
             <br>
-             5000+ счастливых клиентов
+            <div class="features__clients-count">5000+</div> счастливых клиентов
           </h2>
           <p>
              Мы помогли тысячам людей перейти на зеленую энергию.
@@ -116,12 +116,11 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
       </div>
     </div>
   </section>
-  <section class="form">
+  <section class="form" id="form">
     <div class="form__containter">
       <h1>Оставьте свои контакты</h1>
       <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег.</p>
 
-      <form>
         <form>
           <div class="form__group">
             <label for="name">Ваше имя</label>
@@ -150,16 +149,18 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
               <option value="60 - 100">
                 60 000₽ - 100 000₽
               </option>
-              <option value="100+">
-                100 000₽
+              <option value="other">
+                Другое
               </option>
             </select>
           </div>
+          <!-- <div class="form__group form__other-input">
+            <input type="text" placeholder="Введите ваш вариант">
+          </div> -->
           <button type="submit" class="form__submit">
             Отправить заявку
           </button>
         </form>
-      </form>
     </div>
   </section>
   <footer>
@@ -192,4 +193,5 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     </div>
   </footer>
   <script src="js/canvas.js"></script>
+  <script src="js/animations.js"></script>
 </body>
